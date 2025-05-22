@@ -55,6 +55,12 @@ main {
     transform: translate(-50%, -50%);
 }
 
+@supports (-webkit-hyphens: none) or (-moz-appearance: none) {
+    .model-inner {
+        transform: translate(calc(-50% - 140px), -50%);
+    }
+}
+
 .model {
     aspect-ratio: 1;
     width: 100%;
